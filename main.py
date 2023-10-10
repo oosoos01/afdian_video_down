@@ -3,7 +3,7 @@ import os
 from random import randint
 from time import sleep
 
-import eyed3
+#import eyed3
 import requests
 
 SLEEP_TIME = 30
@@ -74,7 +74,7 @@ def download_page(data, list: bool, n: int=-1):
                #audio: eyed3.core.AudioFile = eyed3.load(filename)
 
             except Exception as e:
-                print("下载歌曲失败")
+                print("下载视频失败")
                 print(e)
             sleep(SLEEP_TIME + randint(0, 5))
 
