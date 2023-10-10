@@ -4,6 +4,7 @@
 节目的url应为：`https://afdian.net/album/ALBUM_ID`, 注意是节目的url, 不是创作者的。 
 ### 获取 auth_token  
 获取cookie中的 `auth_token`
+填到代码里面
 ### 下载全部
 ```shell
 python main.py --id ALBUM_ID --all
