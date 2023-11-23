@@ -49,8 +49,11 @@ def download_page(data, list: bool, n: int=-1):
             print(description.replace("\n\n", "\n")) # 去除多余空行
             print("="*40)
         else:
-            filename = f"{title}.mp4"
-            filename2 = f"{title}.jpg"
+            #filename = f"{title}.mp4"
+            #filename2 = f"{title}.jpg"
+            #修改/为_，防止标题中带有/导致下载失败
+            filename = f"{title.replace('/', '_')}.mp4"
+            filename2 = f"{title.replace('/', '_')}.jpg"
             print(f"正在处理：{title}")
             if audio_url.strip() == "":
                 print("本条动态没有视频文件，跳过")
